@@ -9,12 +9,13 @@ Useful extensions for SwiftUI
 
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/SwiftUIExt"
+  spec.homepage     = "https://github.com/frankfka/SwiftUIExt"
   spec.license      = "MIT"
   spec.author             = { "Frank Jia" => "jiafrank98@gmail.com" }
 
   spec.platform     = :ios, "13.0"
-  spec.source       = { :git => "http://EXAMPLE/SwiftUIExt.git", :tag => "#{spec.version}" }
+  spec.swift_version = '5.0'
+  spec.source       = { :git => "https://github.com/frankfka/SwiftUIExt.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "Sources/SwiftUIExt/**/*.{h,m}"
+  spec.source_files  = "Sources/SwiftUIExt/**/*.swift"
 end

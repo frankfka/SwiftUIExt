@@ -8,7 +8,6 @@
 
 import SwiftUI
 
-@available(OSX 10.15, *)
 @available(iOS 13.0, *)
 public extension View {
     // https://swiftwithmajid.com/2019/12/04/must-have-swiftui-extensions/
