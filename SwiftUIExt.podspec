@@ -14,7 +14,7 @@ Useful extensions for SwiftUI
   spec.author             = { "Frank Jia" => "jiafrank98@gmail.com" }
 
   spec.platform     = :ios, "13.0"
-  spec.swift_version = '5.0'
+  spec.swift_version = '5.2'
   spec.source       = { :git => "https://github.com/frankfka/SwiftUIExt.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "Sources/SwiftUIExt/**/*.swift"
