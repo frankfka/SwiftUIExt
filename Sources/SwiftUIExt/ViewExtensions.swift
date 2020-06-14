@@ -10,6 +10,10 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public extension View {
+    // Useful type aliases
+    typealias ContentTransform<Content: View> = (Self) -> Content
+    typealias ContentGenerator<Content: View> = () -> Content
+
     // https://swiftwithmajid.com/2019/12/04/must-have-swiftui-extensions/
     func eraseToAnyView() -> AnyView {
         AnyView(self)
@@ -26,7 +30,6 @@ public extension View {
     func fillWidthAndHeight() -> some View {
         return self.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }
-    typealias ContentTransform<Content: View> = (Self) -> Content
     @ViewBuilder func conditionalModifier<TrueContent: View, FalseContent: View>(
         _ condition: Bool,
         ifTrue: ContentTransform<TrueContent>,
